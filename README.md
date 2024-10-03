@@ -32,7 +32,7 @@ This project aims to build an authentication API using Node.js and MySQL. It all
     - Open `prisma/database.js` and enter your MySQL connection details.
 
 5. Create the database and add tables:
-    ``bash
+    ```bash
     npm run migrate
     ```
 
@@ -45,8 +45,8 @@ This project aims to build an authentication API using Node.js and MySQL. It all
 
 #### API Endpoints
 - **POST /api/auth/register**: New user registration
-- **POST** /api/auth/login**: User login
-  **POST /api/auth/password/reset** Password reset
-  **POST /api/auth/password/change** Password change
+- **POST /api/auth/login**: User login
+- **POST /api/auth/password/reset** Password reset
+- **POST /api/auth/password/change** Password change
 
-Translated with DeepL.com (free version)
+
