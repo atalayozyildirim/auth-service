@@ -1,50 +1,52 @@
 ### NODE JS + MYSQL AUTH SERVICE
 
-#### Proje Açıklaması
-Bu proje, Node.js ve MySQL kullanarak bir kimlik doğrulama API'si oluşturmayı amaçlamaktadır. Kullanıcıların kayıt olmasını, giriş yapmasını ve kimlik doğrulama işlemlerini gerçekleştirmesini sağlar.
+#### Project Description
+This project aims to build an authentication API using Node.js and MySQL. It allows users to register, login and perform authentication processes.
 
-#### Özellikler
-- Kullanıcı kayıt ve giriş işlemleri
-- JWT (JSON Web Token) ile kimlik doğrulama
-- MySQL veritabanı entegrasyonu
-- Şifreleme ve güvenlik önlemleri
+#### Features
+- User registration and login procedures
+- Authentication with JWT (JSON Web Token)
+- MySQL database integration
+- Encryption and security measures
 
-#### Gereksinimler
+#### Requirements
 - Node.js
 - MySQL
 - Redis
 - npm (Node Package Manager)
 
-#### Kurulum
-1. Projeyi klonlayın:
+#### Installation
+1. Clone the project:
     ```bash
     git clone <repository-url>
     ```
-2. Proje dizinine gidin:
+2. Go to the project directory:
     ```bash
     cd project-directory
     ```
-3. Gerekli paketleri yükleyin:
+3. Install the necessary packages:
     ```bash
     npm install
     ```
-4. Veritabanı yapılandırmasını yapın:
-    - `prisma/database.js` dosyasını açın ve MySQL bağlantı bilgilerinizi girin.
+4. Configure the database:
+    - Open `prisma/database.js` and enter your MySQL connection details.
 
-5. Veritabanını oluşturun ve tabloları ekleyin:
-    ```bash
+5. Create the database and add tables:
+    ``bash
     npm run migrate
     ```
 
-#### Kullanım
-1. Sunucuyu başlatın:
+#### Usage
+1. Start the server:
     ```bash
     npm start
     ```
-2. API'yi kullanarak kullanıcı kayıt ve giriş işlemlerini gerçekleştirin.
+2. Perform user registration and login using the API.
 
 #### API Endpoints
-- **POST /api/auth/register**: Yeni kullanıcı kaydı
-- **POST** /api/auth/login**: Kullanıcı girişi
+- **POST /api/auth/register**: New user registration
+- **POST** /api/auth/login**: User login
   **POST /api/auth/password/reset** Password reset
   **POST /api/auth/password/change** Password change
+
+Translated with DeepL.com (free version)
